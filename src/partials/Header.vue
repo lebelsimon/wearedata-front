@@ -65,9 +65,6 @@
         font-weight: 800;
         // animation: 2s textEffect alternate infinite;
     }
-    #buton{
-        
-    }
 
     #deux{
         position: absolute;
