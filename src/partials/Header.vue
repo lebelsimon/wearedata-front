@@ -19,7 +19,7 @@
 <style>
     .heading {
         display: block;
-        background-image: url("../assets/bg-header.png");
+        background-image: url("../assets/home/bg-header.png");
 
     }
 </style>
