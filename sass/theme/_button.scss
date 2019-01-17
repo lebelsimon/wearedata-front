@@ -1,0 +1,28 @@
+.btn{
+    text-transform: uppercase;
+    padding:10px 20px;
+    font-family: $title-font;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.btn{
+    &-white{
+        background: white;
+        color: $color-main;
+    }
+    &-blue{
+        background: $color-main;
+        color: white;
+    }
+    &-rounded{
+        border-radius: 27px;
+    }
+    &-border{
+        &--blue{
+            border: 1px solid #202355;
+        }
+        &--green{
+            border: 1px solid #202355;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.hero-home{
+    height: 600px;
+    position: relative;
+    background-image:linear-gradient(rgba(255, 255 , 255, 0.7),rgba(255, 255 , 255, 0.7)),url('../img/lamar.png');
+    .hero-wrapper{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include translate(-50%,-50%);
+    }
+    h1{
+        text-transform: uppercase;
+        color: $color-main;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        text-shadow: 3px 4px 0 rgba(212,50,50,0.5);
+        line-height: 100px;
+    }
+    .btn{
+        margin-top: 40px;
+    }
+}
