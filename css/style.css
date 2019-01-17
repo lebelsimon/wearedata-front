@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css?family=Aleo|Roboto");
+@font-face {
+  font-family: "Palanquin";
+  src: url("../fonts/Palanquin-Bold.ttf") format("opentype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Palanquin";
+  src: url("../fonts/Palanquin-Light.ttf") format("opentype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Palanquin";
+  src: url("../fonts/Palanquin-Regular.ttf") format("opentype");
+  font-weight: 300;
+}
+/* line 1, ../sass/base/_base.scss */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+}
+
+/* line 5, ../sass/base/_base.scss */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 9, ../sass/base/_base.scss */
+a {
+  color: black;
+  text-decoration: none;
+}
+/* line 12, ../sass/base/_base.scss */
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 17, ../sass/base/_base.scss */
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 20, ../sass/base/_base.scss */
+p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #0F0F0F;
+  line-height: 32px;
+  margin: 0;
+}
+
+/* line 1, ../sass/layout/_header.scss */
+.header-main {
+  text-align: center;
+}
+
+/* line 4, ../sass/layout/_header.scss */
+.menu-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 10, ../sass/layout/_header.scss */
+.menu-wrapper li {
+  padding: 0 15px;
+}
+/* line 12, ../sass/layout/_header.scss */
+.menu-wrapper li a {
+  color: #353663;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* line 1, ../sass/layout/_footer.scss */
+footer {
+  background-color: #353663;
+}
+/* line 4, ../sass/layout/_footer.scss */
+footer .copyright p {
+  color: white;
+}
+
+/* line 1, ../sass/modules/_hero-home.scss */
+.hero-home {
+  height: 600px;
+  position: relative;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../img/lamar.png");
+}
+/* line 5, ../sass/modules/_hero-home.scss */
+.hero-home .hero-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 11, ../sass/modules/_hero-home.scss */
+.hero-home h1 {
+  text-transform: uppercase;
+  color: #353663;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-shadow: 3px 4px 0 rgba(212, 50, 50, 0.5);
+  line-height: 100px;
+}
+/* line 20, ../sass/modules/_hero-home.scss */
+.hero-home .btn {
+  margin-top: 40px;
+}
+
+/* line 1, ../sass/modules/_section-home.scss */
+.left-part {
+  padding: 20px;
+}
+/* line 3, ../sass/modules/_section-home.scss */
+.left-part .btn {
+  margin-top: 20px;
+}
+
+/* line 1, ../sass/modules/_grid-products.scss */
+.grid-products {
+  margin: 0 40px;
+}
+/* line 3, ../sass/modules/_grid-products.scss */
+.grid-products .product-thumbnail {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/* line 10, ../sass/modules/_grid-products.scss */
+.grid-products .product-content h3 {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 3.4px;
+  color: #353663;
+  text-transform: uppercase;
+}
+/* line 17, ../sass/modules/_grid-products.scss */
+.grid-products .product-content .product-price {
+  font-family: "Poppins", sans-serif;
+  color: #797979;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* line 1, ../sass/theme/_button.scss */
+.btn {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+/* line 9, ../sass/theme/_button.scss */
+.btn-white {
+  background: white;
+  color: #353663;
+}
+/* line 13, ../sass/theme/_button.scss */
+.btn-blue {
+  background: #353663;
+  color: white;
+}
+/* line 17, ../sass/theme/_button.scss */
+.btn-rounded {
+  border-radius: 27px;
+}
+/* line 21, ../sass/theme/_button.scss */
+.btn-border--blue {
+  border: 1px solid #202355;
+}
+/* line 24, ../sass/theme/_button.scss */
+.btn-border--green {
+  border: 1px solid #202355;
+}
+
+/* line 2, ../sass/theme/_padding.scss */
+.padding-block--sm {
+  padding: 20px 0;
+}
+/* line 5, ../sass/theme/_padding.scss */
+.padding-block--md {
+  padding: 40px 0;
+}
+/* line 8, ../sass/theme/_padding.scss */
+.padding-block--lg {
+  padding: 80px 0;
+}
+
+/* line 1, ../sass/theme/_flex.scss */
+.display-flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* line 6, ../sass/theme/_flex.scss */
+.justify-content--center {
+  justify-content: center;
+}
+/* line 9, ../sass/theme/_flex.scss */
+.justify-content--top {
+  justify-content: top;
+}
+/* line 12, ../sass/theme/_flex.scss */
+.justify-content--bottom {
+  justify-content: bottom;
+}
+
+/* line 18, ../sass/theme/_flex.scss */
+.align-items--center {
+  align-items: center;
+}
+
+/* line 1, ../sass/theme/_title.scss */
+.main-title {
+  color: #353663;
+  font-weight: bold;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
