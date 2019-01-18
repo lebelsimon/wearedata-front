@@ -19,7 +19,11 @@
 <style>
     .heading {
         display: block;
-        background-image: url("../assets/home/bg-header.png");
-
+        background: url("../assets/home/bg-header.png") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-color: rgba(96,96,96,0.7);
     }
 </style>
