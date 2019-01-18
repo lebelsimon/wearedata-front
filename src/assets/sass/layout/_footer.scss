@@ -1,0 +1,20 @@
+footer{
+    background-color: $color-second;
+    color: $color-main;
+}
+
+.logo-footer{
+    position: relative;
+    top:  20px;
+    left: 20px;
+    text-align: left;
+}
+.logo{
+    margin: 2;
+    max-height: 23px;
+    max-width: 174px;
+}
+.copyright{
+    position: relative;
+    top: -25px;
+}

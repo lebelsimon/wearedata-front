@@ -159,6 +159,95 @@ p {
 }
 
 /*fin hero-home*/
+/* line 1, ../sass/layout/_footer.scss */
+footer {
+  background-color: #34495E;
+  color: white;
+}
+
+/* line 6, ../sass/layout/_footer.scss */
+.logo-footer {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
+
+/* line 12, ../sass/layout/_footer.scss */
+.logo {
+  margin: 2;
+  max-height: 23px;
+  max-width: 174px;
+}
+
+/* line 17, ../sass/layout/_footer.scss */
+.copyright {
+  position: relative;
+  top: -25px;
+}
+
+/* line 1, ../sass/modules/_section-home.scss */
+.first-section {
+  display: inline-flex;
+}
+/* line 3, ../sass/modules/_section-home.scss */
+.first-section .first-elem {
+  margin-left: 10%;
+}
+/* line 6, ../sass/modules/_section-home.scss */
+.first-section .title {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  text-align: left;
+  font-weight: bold;
+  color: #1ABC9C;
+}
+/* line 13, ../sass/modules/_section-home.scss */
+.first-section .inner-elem {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 5%;
+  text-align: left;
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: bold;
+}
+/* line 21, ../sass/modules/_section-home.scss */
+.first-section .normal-text {
+  text-align: left;
+  font-size: 18px;
+}
+
+/* line 28, ../sass/modules/_section-home.scss */
+.second-elem .about-step {
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 30, ../sass/modules/_section-home.scss */
+.second-elem .about-step .number-circle {
+  margin-top: 5%;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-color: #1ABC9C;
+  position: relative;
+}
+/* line 37, ../sass/modules/_section-home.scss */
+.second-elem .about-step .number-circle .number {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 46, ../sass/modules/_section-home.scss */
+.second-elem .about-step .description-wrapper {
+  text-align: left;
+  margin-left: 5%;
+}
+
 /* line 1, ../sass/theme/_button.scss */
 .btn {
   display: inline-block;

@@ -1,0 +1,52 @@
+.first-section{
+    display: inline-flex;
+    .first-elem{
+        margin-left:10%;
+    }
+    .title{  
+        margin-top: 10%;
+        margin-bottom: 5%;
+        text-align: left;
+        font-weight: bold;
+        color: $green;
+    }
+    .inner-elem{
+        font-family: $primary-font;
+        margin-bottom: 5%;
+        text-align: left;
+        font-size: 32px;
+        line-height:39px;
+        font-weight: bold;
+    }
+    .normal-text{
+        text-align: left;
+        font-size: 18px;
+    }
+}
+
+.second-elem{
+    .about-step{
+        @include display-flex();
+        .number-circle{ 
+            margin-top:5%;
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
+            background-color: $green;
+            position: relative;
+            .number{
+                color: white;
+                position: absolute;
+                left:50%;
+                top:50%;
+                @include translate(-50%,-50%);
+            }
+
+        }
+        .description-wrapper{
+            text-align: left;
+            margin-left: 5%;
+        }
+    }
+    
+}

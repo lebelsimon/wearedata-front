@@ -49,25 +49,11 @@
                             <p class="inner-text"> Des  utilitaires pour votre entreprise</p> 
                         </div>
                     </section>
-                        <div class="first-section">
-                            <div class="title uppercase">
-                                comment ça marche ?
-                            </div>
-                            <div>
-                                Vos reporting d’entreprise
-                                réuni sur une 
-                                seule application
-                            </div>
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>
-                        </div>
-                    <section>
 
-                    </section>
                 </div>
             </section>
     </header>
+
 </template>
 
 <script>
