@@ -1,0 +1,119 @@
+.flex{ 
+    margin:30px;
+    display:flex;
+    flex-direction:row;
+    padding:5px; /* this */
+ 
+    .wrapper{
+        flex:1 1 auto;
+        text-align:center;
+        margin:5px;  /* and that, will result in a 10px gap */
+    }
+    
+   
+}
+.inner-text{
+    padding: 10px;
+}
+.lorem{
+    font-size: 18px;
+}
+.application{
+    font-family: $primary-font;
+    font-weight: bold;
+    font-size: 52px;
+    letter-spacing: 10px;
+    line-height: 63px;
+}   
+.here{
+    margin : 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: inline-block;
+    border: 4px solid #FFFFFF;
+}
+.second-section{
+    top: 10%;
+    color: white;
+    background-color: #2091DC;
+}
+#explore{
+    border-radius: 27.5px;
+    position: relative;
+    color: white;
+    text-align: end;
+    border: 2px solid #FFFFFF;
+    padding: 10px;
+}
+#first-button{
+    display : inline-block;
+    padding: 15px;
+    border: 2px solid #2091DC;
+    background-color: #2091DC;
+}
+.arrounded{
+    border-radius: 27.5px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.heading {
+    background-color: rgba(96,96,96,0.7);
+}
+.hero-home{
+    height: 500px;
+    background-image: url("../image/bg-header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+.hero-overlay{  
+    width: 100%;
+    height: 100%;
+    background-color: rgba(96,96,96,0.7); 
+}
+.firstPart{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    padding:0px;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    padding:0px;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 800;
+    // animation: 2s textEffect alternate infinite;
+}
+.secondPart{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    padding:0px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    // animation: 2s textEffect alternate infinite;
+}
+.tirdPart{
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    
+}
+
+
+}/*fin hero-home*/

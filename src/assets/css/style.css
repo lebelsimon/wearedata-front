@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Poppins:300,400,600,700");
+/* line 1, ../sass/base/_base.scss */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+}
+
+/* line 6, ../sass/base/_base.scss */
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 9, ../sass/base/_base.scss */
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+/* line 1, ../sass/layout/_header.scss */
+.flex {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  /* this */
+}
+/* line 7, ../sass/layout/_header.scss */
+.flex .wrapper {
+  flex: 1 1 auto;
+  text-align: center;
+  margin: 5px;
+  /* and that, will result in a 10px gap */
+}
+
+/* line 15, ../sass/layout/_header.scss */
+.inner-text {
+  padding: 10px;
+}
+
+/* line 18, ../sass/layout/_header.scss */
+.lorem {
+  font-size: 18px;
+}
+
+/* line 21, ../sass/layout/_header.scss */
+.application {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 52px;
+  letter-spacing: 10px;
+  line-height: 63px;
+}
+
+/* line 28, ../sass/layout/_header.scss */
+.here {
+  margin: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: inline-block;
+  border: 4px solid #FFFFFF;
+}
+
+/* line 37, ../sass/layout/_header.scss */
+.second-section {
+  top: 10%;
+  color: white;
+  background-color: #2091DC;
+}
+
+/* line 42, ../sass/layout/_header.scss */
+#explore {
+  border-radius: 27.5px;
+  position: relative;
+  color: white;
+  text-align: end;
+  border: 2px solid #FFFFFF;
+  padding: 10px;
+}
+
+/* line 50, ../sass/layout/_header.scss */
+#first-button {
+  display: inline-block;
+  padding: 15px;
+  border: 2px solid #2091DC;
+  background-color: #2091DC;
+}
+
+/* line 56, ../sass/layout/_header.scss */
+.arrounded {
+  border-radius: 27.5px;
+}
+
+/* line 59, ../sass/layout/_header.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 62, ../sass/layout/_header.scss */
+.heading {
+  background-color: rgba(96, 96, 96, 0.7);
+}
+
+/* line 65, ../sass/layout/_header.scss */
+.hero-home {
+  height: 500px;
+  background-image: url("../image/bg-header.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* line 72, ../sass/layout/_header.scss */
+.hero-home .hero-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(96, 96, 96, 0.7);
+}
+/* line 77, ../sass/layout/_header.scss */
+.hero-home .firstPart {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  padding: 0px;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+/* line 87, ../sass/layout/_header.scss */
+.hero-home img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  padding: 0px;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 800;
+}
+/* line 99, ../sass/layout/_header.scss */
+.hero-home .secondPart {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  padding: 0px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+/* line 111, ../sass/layout/_header.scss */
+.hero-home .tirdPart {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+}
+
+/*fin hero-home*/
+/* line 1, ../sass/theme/_button.scss */
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+/* line 11, ../sass/theme/_button.scss */
+.btn-white {
+  background: white;
+  color: white;
+}
+/* line 15, ../sass/theme/_button.scss */
+.btn-blue {
+  border: 2px solid #2091DC;
+  background-color: #2091DC;
+  color: white;
+}
+/* line 20, ../sass/theme/_button.scss */
+.btn-rounded {
+  border-radius: 27px;
+}
+/* line 24, ../sass/theme/_button.scss */
+.btn-border--blue {
+  border: 1px solid #202355;
+}
+/* line 27, ../sass/theme/_button.scss */
+.btn-border--green {
+  border: 1px solid #202355;
+}
+
+/* line 2, ../sass/theme/_padding.scss */
+.padding-block--sm {
+  padding: 20px 0;
+}
+/* line 5, ../sass/theme/_padding.scss */
+.padding-block--md {
+  padding: 40px 0;
+}
+/* line 8, ../sass/theme/_padding.scss */
+.padding-block--lg {
+  padding: 80px 0;
+}
+
+/* line 1, ../sass/theme/_flex.scss */
+.display-flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* line 6, ../sass/theme/_flex.scss */
+.justify-content--center {
+  justify-content: center;
+}
+/* line 9, ../sass/theme/_flex.scss */
+.justify-content--top {
+  justify-content: top;
+}
+/* line 12, ../sass/theme/_flex.scss */
+.justify-content--bottom {
+  justify-content: bottom;
+}
+
+/* line 18, ../sass/theme/_flex.scss */
+.align-items--center {
+  align-items: center;
+}
+
+/* line 1, ../sass/theme/_title.scss */
+.main-title {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
