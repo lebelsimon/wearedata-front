@@ -1,3 +1,16 @@
+/*
+// A debug tool for checking browser support
+@mixin debug-support-matrix($experimental: true, $ie: true) {
+  @debug  $moz-$experimental-support-for-mozilla
+          $webkit-$experimental-support-for-webkit
+          $opera-$experimental-support-for-opera
+          $microsoft-$experimental-support-for-microsoft
+          $khtml-$experimental-support-for-khtml;
+  @debug  $ie6-$legacy-support-for-ie6
+          $ie7-$legacy-support-for-ie7
+          $ie8-$legacy-support-for-ie8;
+}
+*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Poppins:300,400,600,700");
 /* line 1, ../sass/base/_base.scss */
 body {
@@ -163,27 +176,53 @@ p {
 footer {
   background-color: #34495E;
   color: white;
+  display: flex;
+  max-height: 126px;
+  justify-content: space-between;
+  padding-top: 5%;
 }
 
-/* line 6, ../sass/layout/_footer.scss */
+/* line 11, ../sass/layout/_footer.scss */
 .logo-footer {
-  position: relative;
   top: 20px;
   left: 20px;
   text-align: left;
 }
 
-/* line 12, ../sass/layout/_footer.scss */
+/* line 16, ../sass/layout/_footer.scss */
 .logo {
-  margin: 2;
-  max-height: 23px;
-  max-width: 174px;
+  width: 174px;
+  height: 23px;
+  padding-left: 20%;
 }
 
-/* line 17, ../sass/layout/_footer.scss */
+/* line 22, ../sass/layout/_footer.scss */
 .copyright {
+  margin: 0;
+}
+
+/* line 25, ../sass/layout/_footer.scss */
+.social_network {
+  display: inline-flex;
+}
+/* line 27, ../sass/layout/_footer.scss */
+.social_network .social_item {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: 2px solid #FFFFFF;
   position: relative;
-  top: -25px;
+  color: white;
+}
+/* line 34, ../sass/layout/_footer.scss */
+.social_network .social_item .elmt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* line 1, ../sass/modules/_section-home.scss */
