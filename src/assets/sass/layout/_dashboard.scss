@@ -1,27 +1,3 @@
-<template>
-<div class="form-style-5">
-    <form>
-    <fieldset>
-        <legend class="form-title">Importation des factures</legend>
-        <input type="text" name="field1" placeholder="Numéro de facture *">
-        <input type="date" name="field2" placeholder="Date de la facture *">
-        <input type="text" name="field2" placeholder="Nom du produit vendu *">
-        <input type="number" name="field2" placeholder="Total ht *">
-        <input type="number" name="field2" placeholder="Taux de TVA *">
-        <input type="number" name="field2" placeholder="Quantités vendues *">
-        <input type="text" name="field2" placeholder="Client *">
-        <input type="text" name="field2" placeholder="Catégorie de produits vendus *">
-        <input type="text" name="field2" placeholder="Secteur d’activité *">
-</fieldset>
-<input type="submit" value="Apply" />
-</form>
-</div>    
-</template>
-
-<style>
-.form-title{
-    text-align: center;
-}
 .form-style-5{
 	max-width: 500px;
 	padding: 10px 20px;
@@ -124,17 +100,3 @@
 {
 	background: #109177;
 }
-
-</style>
-
-
-
-
-<script>
-    // @ is an alias to /src
-
-    export default {
-        name: "dashboard",
-        components: {}
-    };
-</script>
