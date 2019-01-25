@@ -1,16 +1,3 @@
-/*
-// A debug tool for checking browser support
-@mixin debug-support-matrix($experimental: true, $ie: true) {
-  @debug  $moz-$experimental-support-for-mozilla
-          $webkit-$experimental-support-for-webkit
-          $opera-$experimental-support-for-opera
-          $microsoft-$experimental-support-for-microsoft
-          $khtml-$experimental-support-for-khtml;
-  @debug  $ie6-$legacy-support-for-ie6
-          $ie7-$legacy-support-for-ie7
-          $ie8-$legacy-support-for-ie8;
-}
-*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Poppins:300,400,600,700");
 /* line 1, ../sass/base/_base.scss */
 body {
@@ -28,150 +15,60 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
-/* line 1, ../sass/layout/_header.scss */
-.flex {
-  margin: 30px;
+/* line 2, ../sass/layout/_header.scss */
+.navigation {
+  list-style: none;
+  margin: 0;
+  background: white;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: row;
-  padding: 5px;
-  /* this */
-}
-/* line 7, ../sass/layout/_header.scss */
-.flex .wrapper {
-  flex: 1 1 auto;
-  text-align: center;
-  margin: 5px;
-  /* and that, will result in a 10px gap */
-}
-
-/* line 15, ../sass/layout/_header.scss */
-.inner-text {
-  padding: 10px;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
 }
 
 /* line 18, ../sass/layout/_header.scss */
-.lorem {
-  font-size: 18px;
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: black;
 }
 
-/* line 21, ../sass/layout/_header.scss */
-.application {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 52px;
-  letter-spacing: 10px;
-  line-height: 63px;
+/* line 25, ../sass/layout/_header.scss */
+.navigation a:hover {
+  background: #00b7f5;
 }
 
-/* line 28, ../sass/layout/_header.scss */
-.here {
-  margin: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  display: inline-block;
-  border: 4px solid #FFFFFF;
+@media all and (max-width: 800px) {
+  /* line 30, ../sass/layout/_header.scss */
+  .navigation {
+    justify-content: space-around;
+  }
 }
+@media all and (max-width: 600px) {
+  /* line 36, ../sass/layout/_header.scss */
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
 
-/* line 37, ../sass/layout/_header.scss */
-.second-section {
-  top: 10%;
-  color: white;
-  background-color: #2091DC;
-}
+  /* line 42, ../sass/layout/_header.scss */
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
 
-/* line 42, ../sass/layout/_header.scss */
-#explore {
-  border-radius: 27.5px;
-  position: relative;
-  color: white;
-  text-align: end;
-  border: 2px solid #FFFFFF;
-  padding: 10px;
+  /* line 50, ../sass/layout/_header.scss */
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
 }
-
-/* line 50, ../sass/layout/_header.scss */
-#first-button {
-  display: inline-block;
-  padding: 15px;
-  border: 2px solid #2091DC;
-  background-color: #2091DC;
-}
-
-/* line 56, ../sass/layout/_header.scss */
-.arrounded {
-  border-radius: 27.5px;
-}
-
-/* line 59, ../sass/layout/_header.scss */
-.uppercase {
-  text-transform: uppercase;
-}
-
-/* line 62, ../sass/layout/_header.scss */
-.heading {
-  background-color: rgba(96, 96, 96, 0.7);
-}
-
-/* line 65, ../sass/layout/_header.scss */
-.hero-home {
-  height: 500px;
-  background-image: url("../image/bg-header.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-/* line 72, ../sass/layout/_header.scss */
-.hero-home .hero-overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(96, 96, 96, 0.7);
-}
-/* line 77, ../sass/layout/_header.scss */
-.hero-home .firstPart {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  color: white;
-  transform: translate(-50%, -50%);
-  padding: 0px;
-  font-size: 24px;
-  letter-spacing: 3px;
-}
-/* line 87, ../sass/layout/_header.scss */
-.hero-home img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: white;
-  transform: translate(-50%, -50%);
-  padding: 0px;
-  font-size: 40px;
-  letter-spacing: 4px;
-  font-weight: 800;
-}
-/* line 99, ../sass/layout/_header.scss */
-.hero-home .secondPart {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  color: white;
-  transform: translate(-50%, -50%);
-  padding: 0px;
-  font-size: 20px;
-  letter-spacing: 3px;
-  font-weight: 800;
-}
-/* line 111, ../sass/layout/_header.scss */
-.hero-home .tirdPart {
-  position: absolute;
-  bottom: 5%;
-  right: 10%;
-}
-
-/*fin hero-home*/
 /* line 1, ../sass/layout/_footer.scss */
 footer {
   background-color: #34495E;
@@ -204,8 +101,9 @@ footer {
 /* line 25, ../sass/layout/_footer.scss */
 .social_network {
   display: inline-flex;
+  margin-top: -2%;
 }
-/* line 27, ../sass/layout/_footer.scss */
+/* line 28, ../sass/layout/_footer.scss */
 .social_network .social_item {
   width: 60px;
   height: 60px;
@@ -214,8 +112,182 @@ footer {
   position: relative;
   color: white;
 }
-/* line 34, ../sass/layout/_footer.scss */
+/* line 35, ../sass/layout/_footer.scss */
 .social_network .social_item .elmt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 1, ../sass/modules/_hero-home.scss */
+.flex {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  /* this */
+  align-items: baseline;
+}
+/* line 6, ../sass/modules/_hero-home.scss */
+.flex .wrapper {
+  flex: 1 1 auto;
+  text-align: center;
+  margin: 5px;
+  /* and that, will result in a 10px gap */
+}
+
+/* line 14, ../sass/modules/_hero-home.scss */
+.inner-text {
+  padding: 10px;
+}
+
+/* line 17, ../sass/modules/_hero-home.scss */
+.lorem {
+  font-size: 18px;
+}
+
+/* line 20, ../sass/modules/_hero-home.scss */
+.application {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 52px;
+  letter-spacing: 10px;
+  line-height: 63px;
+}
+
+/* line 27, ../sass/modules/_hero-home.scss */
+.here {
+  margin: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: inline-block;
+  border: 4px solid #FFFFFF;
+}
+
+/* line 36, ../sass/modules/_hero-home.scss */
+.second-section {
+  top: 10%;
+  color: white;
+  background-color: #2091DC;
+}
+
+/* line 41, ../sass/modules/_hero-home.scss */
+#explore {
+  display: inline-flex;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  letter-spacing: 4.44px;
+  border-radius: 27.5px;
+  color: white;
+  text-align: end;
+  border: 2px solid #FFFFFF;
+  padding: 10px;
+}
+
+/* line 53, ../sass/modules/_hero-home.scss */
+#first-button {
+  display: inline-block;
+  padding: 15px;
+  border: 2px solid #2091DC;
+  background-color: #2091DC;
+}
+
+/* line 59, ../sass/modules/_hero-home.scss */
+.arrounded {
+  border-radius: 27.5px;
+}
+
+/* line 62, ../sass/modules/_hero-home.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 65, ../sass/modules/_hero-home.scss */
+.heading {
+  background-color: rgba(96, 96, 96, 0.7);
+}
+
+/* line 68, ../sass/modules/_hero-home.scss */
+.hero-home {
+  height: 500px;
+  background-image: url("../image/bg-header.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* line 75, ../sass/modules/_hero-home.scss */
+.hero-home .hero-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(96, 96, 96, 0.7);
+}
+/* line 80, ../sass/modules/_hero-home.scss */
+.hero-home .firstPart {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  padding: 0px;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+/* line 90, ../sass/modules/_hero-home.scss */
+.hero-home img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  padding: 0px;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 800;
+}
+/* line 102, ../sass/modules/_hero-home.scss */
+.hero-home .secondPart {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  padding: 0px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+/*fin hero-home*/
+/* line 120, ../sass/modules/_hero-home.scss */
+.social_network_head {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  text-align: left;
+  justify-content: flex-start;
+  display: inline-flex;
+  margin-top: -2%;
+}
+/* line 128, ../sass/modules/_hero-home.scss */
+.social_network_head .social_item {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: 2px solid #FFFFFF;
+  position: relative;
+  color: white;
+  margin: 0 10px;
+}
+/* line 136, ../sass/modules/_hero-home.scss */
+.social_network_head .social_item .elmt {
   position: absolute;
   left: 50%;
   top: 50%;
