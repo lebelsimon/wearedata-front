@@ -3,15 +3,16 @@
     <form>
     <fieldset>
         <legend class="form-title">Importation des factures</legend>
-        <input type="text" name="field1" placeholder="Numéro de facture *">
-        <input type="date" name="field2" placeholder="Date de la facture *">
-        <input type="text" name="field2" placeholder="Nom du produit vendu *">
-        <input type="number" name="field2" placeholder="Total ht *">
-        <input type="number" name="field2" placeholder="Taux de TVA *">
-        <input type="number" name="field2" placeholder="Quantités vendues *">
-        <input type="text" name="field2" placeholder="Client *">
-        <input type="text" name="field2" placeholder="Catégorie de produits vendus *">
-        <input type="text" name="field2" placeholder="Secteur d’activité *">
+        <input type="text" name="number" placeholder="Numéro de facture *">
+        <input type="date" name="date" placeholder="Date de la facture *">
+        <input type="text" name="name" placeholder="Nom du produit vendu *">
+        <input type="number" name="totalHT" placeholder="Total ht *">
+        <input type="number" name="totalTVA" placeholder="Taux de TVA *">
+        <input type="number" name="totalTTC" placeholder="Taux de TVA *">
+        <input type="number" name="quantity" placeholder="Quantités vendues *">
+        <input type="text" name="idClient" placeholder="Client *">
+        <input type="text" name="salesCategory" placeholder="Catégorie de produits vendus *">
+        <input type="text" name="workfield" placeholder="Secteur d’activité *">
 </fieldset>
 <input type="submit" value="Apply" />
 </form>

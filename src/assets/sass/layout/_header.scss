@@ -2,15 +2,12 @@
 .navigation {
     list-style: none;
     margin: 0; 
-    
-    background: white;
-    
+    background: $color-second;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    
     -webkit-flex-flow: row wrap;
     justify-content: flex-end;
   }
@@ -19,7 +16,7 @@
     text-decoration: none;
     display: block;
     padding: 1em;
-    color: black;
+    color: $color-main;
   }
   
   .navigation a:hover {

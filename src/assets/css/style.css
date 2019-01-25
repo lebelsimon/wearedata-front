@@ -19,7 +19,7 @@ p {
 .navigation {
   list-style: none;
   margin: 0;
-  background: white;
+  background: #34495E;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -29,34 +29,34 @@ p {
   justify-content: flex-end;
 }
 
-/* line 18, ../sass/layout/_header.scss */
+/* line 15, ../sass/layout/_header.scss */
 .navigation a {
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: black;
+  color: white;
 }
 
-/* line 25, ../sass/layout/_header.scss */
+/* line 22, ../sass/layout/_header.scss */
 .navigation a:hover {
   background: #00b7f5;
 }
 
 @media all and (max-width: 800px) {
-  /* line 30, ../sass/layout/_header.scss */
+  /* line 27, ../sass/layout/_header.scss */
   .navigation {
     justify-content: space-around;
   }
 }
 @media all and (max-width: 600px) {
-  /* line 36, ../sass/layout/_header.scss */
+  /* line 33, ../sass/layout/_header.scss */
   .navigation {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     padding: 0;
   }
 
-  /* line 42, ../sass/layout/_header.scss */
+  /* line 39, ../sass/layout/_header.scss */
   .navigation a {
     text-align: center;
     padding: 10px;
@@ -64,7 +64,7 @@ p {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  /* line 50, ../sass/layout/_header.scss */
+  /* line 47, ../sass/layout/_header.scss */
   .navigation li:last-of-type a {
     border-bottom: none;
   }
