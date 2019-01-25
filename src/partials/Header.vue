@@ -1,7 +1,7 @@
 <template>
    
 <ul class="navigation">
-  <li><a href="#">Connection</a></li>
+  <li><a href="#">Connexion</a></li>
   <li><a href="#">Inscription</a></li>
 </ul>
 
