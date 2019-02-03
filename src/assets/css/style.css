@@ -76,43 +76,48 @@ footer {
   display: flex;
   max-height: 126px;
   justify-content: space-between;
-  padding-top: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-items: baseline;
 }
 
-/* line 11, ../sass/layout/_footer.scss */
+/* line 13, ../sass/layout/_footer.scss */
 .logo-footer {
   top: 20px;
   left: 20px;
   text-align: left;
 }
 
-/* line 16, ../sass/layout/_footer.scss */
+/* line 18, ../sass/layout/_footer.scss */
 .logo {
   width: 174px;
   height: 23px;
   padding-left: 20%;
 }
 
-/* line 22, ../sass/layout/_footer.scss */
+/* line 24, ../sass/layout/_footer.scss */
 .copyright {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
 }
 
-/* line 25, ../sass/layout/_footer.scss */
+/* line 29, ../sass/layout/_footer.scss */
 .social_network {
   display: inline-flex;
-  margin-top: -2%;
+  justify-content: space-between;
 }
-/* line 28, ../sass/layout/_footer.scss */
+/* line 32, ../sass/layout/_footer.scss */
 .social_network .social_item {
-  width: 60px;
-  height: 60px;
+  width: 31px;
+  height: 31px;
   border-radius: 60px;
   border: 2px solid #FFFFFF;
   position: relative;
   color: white;
+  margin: 0 5px;
 }
-/* line 35, ../sass/layout/_footer.scss */
+/* line 40, ../sass/layout/_footer.scss */
 .social_network .social_item .elmt {
   position: absolute;
   left: 50%;
@@ -121,6 +126,124 @@ footer {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+/* line 1, ../sass/layout/_dashboard.scss */
+.form-style-5 {
+  max-width: 500px;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  margin: 10px auto;
+  padding: 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* line 12, ../sass/layout/_dashboard.scss */
+.form-style-5 fieldset {
+  border: none;
+}
+
+/* line 15, ../sass/layout/_dashboard.scss */
+.form-style-5 legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+/* line 19, ../sass/layout/_dashboard.scss */
+.form-style-5 label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* line 23, ../sass/layout/_dashboard.scss */
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+/* line 51, ../sass/layout/_dashboard.scss */
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus {
+  background: #d2d9dd;
+}
+
+/* line 63, ../sass/layout/_dashboard.scss */
+.form-style-5 select {
+  -webkit-appearance: menulist-button;
+  height: 35px;
+}
+
+/* line 67, ../sass/layout/_dashboard.scss */
+.form-style-5 .number {
+  background: #1abc9c;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 15px 15px 15px 0px;
+}
+
+/* line 81, ../sass/layout/_dashboard.scss */
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"] {
+  position: relative;
+  display: block;
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  margin: 0 auto;
+  background: #1abc9c;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border: 1px solid #16a085;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+}
+
+/* line 98, ../sass/layout/_dashboard.scss */
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover {
+  background: #109177;
 }
 
 /* line 1, ../sass/modules/_hero-home.scss */
@@ -177,21 +300,29 @@ footer {
   background-color: #2091DC;
 }
 
-/* line 41, ../sass/modules/_hero-home.scss */
-#explore {
+/* line 42, ../sass/modules/_hero-home.scss */
+#explore_div {
   display: inline-flex;
+  align-items: baseline;
   position: absolute;
+  justify-content: space-between;
   bottom: 5%;
   right: 10%;
-  letter-spacing: 4.44px;
   border-radius: 27.5px;
   color: white;
-  text-align: end;
+  font-weight: bold;
   border: 2px solid #FFFFFF;
-  padding: 10px;
+  padding: 0 56px;
 }
 
-/* line 53, ../sass/modules/_hero-home.scss */
+/* line 58, ../sass/modules/_hero-home.scss */
+#explore {
+  padding: 0 10px;
+  text-align: end;
+  letter-spacing: 4.44px;
+}
+
+/* line 63, ../sass/modules/_hero-home.scss */
 #first-button {
   display: inline-block;
   padding: 15px;
@@ -199,22 +330,22 @@ footer {
   background-color: #2091DC;
 }
 
-/* line 59, ../sass/modules/_hero-home.scss */
+/* line 69, ../sass/modules/_hero-home.scss */
 .arrounded {
   border-radius: 27.5px;
 }
 
-/* line 62, ../sass/modules/_hero-home.scss */
+/* line 72, ../sass/modules/_hero-home.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 65, ../sass/modules/_hero-home.scss */
+/* line 75, ../sass/modules/_hero-home.scss */
 .heading {
   background-color: rgba(96, 96, 96, 0.7);
 }
 
-/* line 68, ../sass/modules/_hero-home.scss */
+/* line 78, ../sass/modules/_hero-home.scss */
 .hero-home {
   height: 500px;
   background-image: url("../image/bg-header.png");
@@ -223,13 +354,13 @@ footer {
   background-size: cover;
   position: relative;
 }
-/* line 75, ../sass/modules/_hero-home.scss */
+/* line 85, ../sass/modules/_hero-home.scss */
 .hero-home .hero-overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(96, 96, 96, 0.7);
 }
-/* line 80, ../sass/modules/_hero-home.scss */
+/* line 90, ../sass/modules/_hero-home.scss */
 .hero-home .firstPart {
   position: absolute;
   top: 20%;
@@ -240,7 +371,7 @@ footer {
   font-size: 24px;
   letter-spacing: 3px;
 }
-/* line 90, ../sass/modules/_hero-home.scss */
+/* line 100, ../sass/modules/_hero-home.scss */
 .hero-home img {
   position: absolute;
   top: 50%;
@@ -252,7 +383,7 @@ footer {
   letter-spacing: 4px;
   font-weight: 800;
 }
-/* line 102, ../sass/modules/_hero-home.scss */
+/* line 112, ../sass/modules/_hero-home.scss */
 .hero-home .secondPart {
   position: absolute;
   top: 70%;
@@ -266,7 +397,7 @@ footer {
 }
 
 /*fin hero-home*/
-/* line 120, ../sass/modules/_hero-home.scss */
+/* line 130, ../sass/modules/_hero-home.scss */
 .social_network_head {
   position: absolute;
   bottom: 5%;
@@ -276,17 +407,17 @@ footer {
   display: inline-flex;
   margin-top: -2%;
 }
-/* line 128, ../sass/modules/_hero-home.scss */
+/* line 138, ../sass/modules/_hero-home.scss */
 .social_network_head .social_item {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 60px;
   border: 2px solid #FFFFFF;
   position: relative;
   color: white;
   margin: 0 10px;
 }
-/* line 136, ../sass/modules/_hero-home.scss */
+/* line 146, ../sass/modules/_hero-home.scss */
 .social_network_head .social_item .elmt {
   position: absolute;
   left: 50%;
@@ -382,12 +513,13 @@ footer {
 /* line 20, ../sass/theme/_button.scss */
 .btn-rounded {
   border-radius: 27px;
+  box-shadow: 0px 1px rgba(75, 75, 75, 0.5);
 }
-/* line 24, ../sass/theme/_button.scss */
+/* line 25, ../sass/theme/_button.scss */
 .btn-border--blue {
   border: 1px solid #202355;
 }
-/* line 27, ../sass/theme/_button.scss */
+/* line 28, ../sass/theme/_button.scss */
 .btn-border--green {
   border: 1px solid #202355;
 }

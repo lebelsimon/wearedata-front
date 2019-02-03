@@ -24,8 +24,9 @@
                                 <i class="fab fa-linkedin-in elmt"></i>
                             </div>
                     </div>
-                    <div id="explore" class="uppercase arrounded">
-                            explore <i class="fas fa-angle-down"></i>
+                    <div id="explore_div" class="uppercase arrounded">
+                            <p id="explore">explore</p>   
+                            <i class="fas fa-angle-down"></i>
                     </div>
                     <div class="tirdPart">
             
