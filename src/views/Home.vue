@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <app-form></app-form>
   </div>
 </template>
 
@@ -13,12 +14,11 @@
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-
+import Form from '@/components/basics/forms/Form.vue';
 export default {
   name: 'home',
-  // components: {
-  //   HelloWorld
-  // }
+  components: {
+    appForm: Form
+  }
 }
 </script>
