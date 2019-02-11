@@ -129,21 +129,10 @@
 
 
 <script>
-<<<<<<< HEAD
-// @ is an alias to /src
-import Form from '@/components/basics/forms/Form.vue';
-export default {
-  name: 'home',
-  components: {
-    appForm: Form
-  }
-}
-=======
     // @ is an alias to /src
 
     export default {
         name: "home",
         components: {}
     };
->>>>>>> frederic
 </script>
