@@ -1,0 +1,21 @@
+.display-flex{
+    @include display-flex();
+}
+
+.justify-content{
+    &--center{
+        justify-content: center;
+    }
+    &--top{
+        justify-content: top;
+    }
+    &--bottom{
+        justify-content: bottom;
+    }
+}
+
+.align-items{
+    &--center{
+        align-items: center;
+    }
+}
