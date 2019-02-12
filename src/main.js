@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import axios from './backend/vue-axios/axios'
+import store from './store'
 // import translations from "./resources/translations";
 
 // Vue.use(VueI18n);
@@ -19,5 +20,6 @@ Vue.prototype.$http = axios
 new Vue({
   router,
   axios,
+  store,
   render: h => h(App)
 }).$mount('#app')
