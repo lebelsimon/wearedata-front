@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
   name: 'Login',
   data () {
@@ -34,18 +35,20 @@ export default {
         this.loginFailed()
         return
     }
-
     localStorage.token = req.data.token
-    this.error = false
-
+    this.$store.dispatch('login')
     this.$router.replace(this.$route.query.redirect || '/dashboard')
     },
 
     loginFailed () {
     this.error = 'Login failed!'
+    this.$store.dispatch('logout')
     delete localStorage.token
     }
-    }
+  },
+  computed: {
+    ...mapGetters({ currentUser: 'currentUser' })
+  },
 }
 </script>
 
