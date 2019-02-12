@@ -1,8 +1,8 @@
 <template>
    
 <ul class="navigation">
-  <li><a href="#">Connexion</a></li>
-  <li><a href="#">Inscription</a></li>
+  <router-link to="/login"><li><a>Connexion</a></li></router-link>
+  <router-link to=""><li><a>Inscription</a></li></router-link>
 </ul>
 
 </template>
