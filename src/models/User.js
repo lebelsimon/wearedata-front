@@ -10,11 +10,11 @@ export default class User {
     }
   }
 
-  constructor ({ _id, name, firstName, company, siret, email, 
+  constructor ({ id, name, firstName, company, siret, email, 
                 telephone, company_adress,company_citycode,company_city,
-                website, login, password, created, __v
+                website, login, created, v
               }) {
-    this.id = _id // eslint-disable-line camelcase
+    this.id = id // eslint-disable-line camelcase
     this.name = name
     this.firstName = firstName
     this.company = company
@@ -26,9 +26,8 @@ export default class User {
     this.company_city = company_city
     this.website = website
     this.login = login
-    this.password = password
     this.created = created
-    this.__v = __v
+    this.v = v
   }
 
   get isAdmin () {

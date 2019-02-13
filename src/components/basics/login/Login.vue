@@ -23,7 +23,20 @@ export default {
       error: false
     }
   },
+  created () {
+    this.checkCurrentLogin()
+  },
+  updated () {
+      this.checkCurrentLogin()
+  },
   methods: {
+    checkCurrentLogin () {
+        if (this.currentUser) {
+            console.log(this.currentUser)
+            this.$router.replace(this.$route.query.redirect || '/dashboard')
+        }
+    },
+    
     loging () {
         this.$http.post('/login', { login: this.login, password: this.password })
         .then(request => this.loginSuccessful(request))
@@ -44,7 +57,7 @@ export default {
     this.error = 'Login failed!'
     this.$store.dispatch('logout')
     delete localStorage.token
-    }
+    },
   },
   computed: {
     ...mapGetters({ currentUser: 'currentUser' })
