@@ -71,6 +71,7 @@ body {
 }
 
 .login-wrapper {
+  animation: fadein 0.6s;
   background: #fff;
   width: 70%;
   margin: 12% auto;
@@ -108,5 +109,10 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 </style>
