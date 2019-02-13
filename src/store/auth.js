@@ -19,6 +19,9 @@ const mutations = {
     },
     [MutationTypes.LOGOUT] (state) {
       state.user = null
+    },
+    [MutationTypes.SIGNUP] (state){
+        state.user = User.from(localStorage.token)
     }
   }
 
@@ -29,6 +32,10 @@ const actions = {
   
     logout ({ commit }) {
       commit(MutationTypes.LOGOUT)
+    },
+
+    signup ({ commit }) {
+        commit(MutationTypes.SIGNUP)
     }
   }
 

@@ -12,7 +12,7 @@ export default class User {
 
   constructor ({ id, name, firstName, company, siret, email, 
                 telephone, company_adress,company_citycode,company_city,
-                website, login, created, v
+                website, login, created, version
               }) {
     this.id = id // eslint-disable-line camelcase
     this.name = name
@@ -27,7 +27,7 @@ export default class User {
     this.website = website
     this.login = login
     this.created = created
-    this.v = v
+    this.version = version
   }
 
   get isAdmin () {

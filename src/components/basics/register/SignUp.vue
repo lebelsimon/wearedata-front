@@ -1,12 +1,26 @@
 <template>
   <div class="login-wrapper border border-light">
-    <form class="form-signin" @submit.prevent="signUp">
-      <h2 class="form-signin-heading">Please sign in</h2>
-      <label for="inputLogin" class="sr-only">Login</label>
-      <input v-model="login" type="text" id="inputLogin" class="form-control" placeholder="Login" required autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input v-model="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <form class="form-login" @submit.prevent="signUp">
+      <h2 class="form-login-heading">Please register</h2>
+      <label for="inputName" class="sr-only">Name</label>
+      <input v-model="name" type="text" id="inputName" class="form-control" placeholder="Name" required autofocus>
+
+      <label for="inputFirstName" class="sr-only">First name</label>
+      <input v-model="firstName" type="text" id="inputFirstName" class="form-control" placeholder="FirstName" required>
+
+      <label for="inputCompany" class="sr-only">Company</label>
+      <input v-model="company" type="text" id="inputCompany" class="form-control" placeholder="Company" required>
+
+      <label for="inputSiret" class="sr-only">Siret</label>
+      <input v-model="siret" type="number" id="inputSiret" class="form-control" placeholder="Siret" required>
+
+      <label for="inputEmail" class="sr-only">Email</label>
+      <input v-model="email" type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+
+      <label for="inputTelephone" class="sr-only">First name</label>
+      <input v-model="telephone" type="text" id="inputTelephone" class="form-control" placeholder="Telephone" required>      
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
       <div class="alert alert-danger" v-if="error">{{ error }}</div>
     </form>
   </div>
@@ -18,8 +32,12 @@ export default {
   name: 'SignUp',
   data () {
     return {
-      login: '',
-      password: '',
+      name: '', 
+      firstName: '', 
+      company: '', 
+      siret: '', 
+      email: '',
+      telephone: '',
       error: false
     }
   },
@@ -38,7 +56,9 @@ export default {
     },
     
     signUp () {
-        this.$http.post('/signUp', { login: this.login, password: this.password })
+        this.$http.post('/signUp', { name: this.name, firstName: this.firstName, company: this.company,
+                                    siret: this.siret, email: this.email, telephone: this.telephone,
+                                    })
         .then(request => this.signUpSuccessful(request))
         .catch(() => this.signUpFail())
     },
@@ -49,7 +69,7 @@ export default {
         return
     }
     localStorage.token = req.data.token
-    this.$store.dispatch('login')
+    this.$store.dispatch('signup')
     this.$router.replace(this.$route.query.redirect || '/dashboard')
     },
 
@@ -77,19 +97,19 @@ body {
   margin: 12% auto;
 }
 
-.form-signin {
+.form-login {
   max-width: 330px;
   padding: 10% 15px;
   margin: 0 auto;
 }
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
+.form-login .form-login-heading,
+.form-login .checkbox {
   margin-bottom: 10px;
 }
-.form-signin .checkbox {
+.form-login .checkbox {
   font-weight: normal;
 }
-.form-signin .form-control {
+.form-login .form-control {
   position: relative;
   height: auto;
   -webkit-box-sizing: border-box;
@@ -97,15 +117,15 @@ body {
   padding: 10px;
   font-size: 16px;
 }
-.form-signin .form-control:focus {
+.form-login .form-control:focus {
   z-index: 2;
 }
-.form-signin input[type="text"] {
+.form-login input[type="text"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.form-signin input[type="password"] {
+.form-login input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;

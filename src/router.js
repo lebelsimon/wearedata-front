@@ -10,7 +10,8 @@ export default new Router({
   mode: 'history',
   routes: [
     {path: '/',name: 'home',component: Home},
-    {path: '/login', component: () => import('./components/basics/login/Login.vue')},
+    {path: '/login',name: 'login', component: () => import('./components/basics/login/Login.vue')},
+    {path: '/signup',name: 'signup', component: () => import('./components/basics/register/SignUp.vue')},
     {path: '/dashboard',name: 'dashboard',component: Dashboard},
     {path: '/logout',name: 'Logout',component: Logout}
   ]
