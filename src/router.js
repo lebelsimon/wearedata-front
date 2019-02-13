@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
 import Dashboard from './views/loggedviews/Dashboard.vue';
-// import Login from '@/components/basics/login/Login'
+import Logout from './components/basics/login/Logout.vue'
 
 Vue.use(Router);
 
@@ -12,9 +12,7 @@ export default new Router({
     {path: '/',name: 'home',component: Home},
     {path: '/login', component: () => import('./components/basics/login/Login.vue')},
     {path: '/dashboard',name: 'dashboard',component: Dashboard},
-        
-    // //otherwise redirect to home
-    // {path: '*', redirect: '/'},
+    {path: '/logout',name: 'Logout',component: Logout}
   ]
 });
 
