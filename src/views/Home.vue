@@ -130,9 +130,12 @@
 
 <script>
     // @ is an alias to /src
-
+    import { mapGetters } from 'vuex'
     export default {
         name: "home",
-        components: {}
+        computed: {
+            ...mapGetters({ currentUser: 'currentUser' })
+        },
+        components: {},
     };
 </script>
