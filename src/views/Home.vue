@@ -8,7 +8,7 @@
                    <img src="../assets/image/LOGO-BIG.svg" alt="logo">
                     <div class ="secondPart">
                         <p class="uppercase">démocratisez l'accès à vos données d'entreprise </p>
-                        <div class="btn btn-blue btn-rounded">soyez les premiers !</div>
+                        <div class="butn butn-blue butn-rounded">soyez les premiers !</div>
                     </div>
 
                     <div class = "social_network_head">
@@ -92,7 +92,7 @@
                             </div>
                         </div>
                         <div class="description-wrapper">
-                            <h1>Pluguer vos données</h1>
+                            <h1 class="title-desc">Pluguer vos données</h1>
                             <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
@@ -104,7 +104,7 @@
                             </div>
                         </div>
                         <div class="description-wrapper">
-                            <h1>Laisser tourner notre application</h1>
+                            <h1 class="title-desc">Laisser tourner notre application</h1>
                             <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                         <div class="description-wrapper">
-                            <h1>Customiser vos reporting</h1>
+                            <h1 class="title-desc">Customiser vos reporting</h1>
                             <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>

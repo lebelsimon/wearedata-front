@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="nav-bar">
   <sidenav></sidenav>
+    <router-link to="/"><a><img class="logo" src="../assets/image/LOGO-BIG.svg" alt="logo"></a></router-link>
   <ul class="navigation">
-    <router-link to="/"><a><img src="../assets/image/LOGO-BIG.svg" alt="logo"></a></router-link>
-    <router-link to="/"><a>Hello, {{ currentUser.firstName }} !</a></router-link>
+    <router-link to="/dashboard"><a>Hello, {{ currentUser.firstName }} !</a></router-link>
     <router-link to="/logout">
       <li>
         <a>
