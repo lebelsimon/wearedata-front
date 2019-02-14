@@ -15,7 +15,16 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
-/* line 2, ../sass/layout/_header.scss */
+/* line 1, ../sass/layout/_header.scss */
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #34495E;
+  align-items: center;
+}
+
+/* line 10, ../sass/layout/_header.scss */
 .navigation {
   list-style: none;
   margin: 0;
@@ -29,12 +38,12 @@ p {
   justify-content: flex-end;
 }
 
-/* line 14, ../sass/layout/_header.scss */
+/* line 22, ../sass/layout/_header.scss */
 .logo-header {
   align-self: flex-start;
 }
 
-/* line 18, ../sass/layout/_header.scss */
+/* line 26, ../sass/layout/_header.scss */
 .navigation a {
   text-decoration: none;
   display: block;
@@ -42,26 +51,26 @@ p {
   color: white;
 }
 
-/* line 25, ../sass/layout/_header.scss */
+/* line 33, ../sass/layout/_header.scss */
 .navigation a:hover {
   background: #00b7f5;
 }
 
 @media all and (max-width: 800px) {
-  /* line 30, ../sass/layout/_header.scss */
+  /* line 38, ../sass/layout/_header.scss */
   .navigation {
     justify-content: space-around;
   }
 }
 @media all and (max-width: 600px) {
-  /* line 36, ../sass/layout/_header.scss */
+  /* line 44, ../sass/layout/_header.scss */
   .navigation {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     padding: 0;
   }
 
-  /* line 42, ../sass/layout/_header.scss */
+  /* line 50, ../sass/layout/_header.scss */
   .navigation a {
     text-align: center;
     padding: 10px;
@@ -69,7 +78,7 @@ p {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  /* line 50, ../sass/layout/_header.scss */
+  /* line 58, ../sass/layout/_header.scss */
   .navigation li:last-of-type a {
     border-bottom: none;
   }
