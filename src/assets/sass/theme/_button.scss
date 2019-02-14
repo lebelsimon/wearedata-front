@@ -1,4 +1,4 @@
-.btn{
+.butn{
     display: inline-block;
     text-transform: uppercase;
     padding:10px 20px;
@@ -7,7 +7,7 @@
     letter-spacing: 2px;
 }
 
-.btn{
+.butn{
     &-white{
         background: white;
         color: $color-main;

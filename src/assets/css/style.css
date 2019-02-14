@@ -29,7 +29,12 @@ p {
   justify-content: flex-end;
 }
 
-/* line 15, ../sass/layout/_header.scss */
+/* line 14, ../sass/layout/_header.scss */
+.logo-header {
+  align-self: flex-start;
+}
+
+/* line 18, ../sass/layout/_header.scss */
 .navigation a {
   text-decoration: none;
   display: block;
@@ -37,26 +42,26 @@ p {
   color: white;
 }
 
-/* line 22, ../sass/layout/_header.scss */
+/* line 25, ../sass/layout/_header.scss */
 .navigation a:hover {
   background: #00b7f5;
 }
 
 @media all and (max-width: 800px) {
-  /* line 27, ../sass/layout/_header.scss */
+  /* line 30, ../sass/layout/_header.scss */
   .navigation {
     justify-content: space-around;
   }
 }
 @media all and (max-width: 600px) {
-  /* line 33, ../sass/layout/_header.scss */
+  /* line 36, ../sass/layout/_header.scss */
   .navigation {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     padding: 0;
   }
 
-  /* line 39, ../sass/layout/_header.scss */
+  /* line 42, ../sass/layout/_header.scss */
   .navigation a {
     text-align: center;
     padding: 10px;
@@ -64,7 +69,7 @@ p {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  /* line 47, ../sass/layout/_header.scss */
+  /* line 50, ../sass/layout/_header.scss */
   .navigation li:last-of-type a {
     border-bottom: none;
   }
@@ -247,6 +252,11 @@ footer {
 }
 
 /* line 1, ../sass/modules/_hero-home.scss */
+.home {
+  text-align: center;
+}
+
+/* line 4, ../sass/modules/_hero-home.scss */
 .flex {
   margin: 30px;
   display: flex;
@@ -255,7 +265,7 @@ footer {
   /* this */
   align-items: baseline;
 }
-/* line 6, ../sass/modules/_hero-home.scss */
+/* line 9, ../sass/modules/_hero-home.scss */
 .flex .wrapper {
   flex: 1 1 auto;
   text-align: center;
@@ -263,17 +273,19 @@ footer {
   /* and that, will result in a 10px gap */
 }
 
-/* line 14, ../sass/modules/_hero-home.scss */
+/* line 17, ../sass/modules/_hero-home.scss */
 .inner-text {
+  font-weight: bold;
+  font-size: 18px;
   padding: 10px;
 }
 
-/* line 17, ../sass/modules/_hero-home.scss */
+/* line 22, ../sass/modules/_hero-home.scss */
 .lorem {
   font-size: 18px;
 }
 
-/* line 20, ../sass/modules/_hero-home.scss */
+/* line 25, ../sass/modules/_hero-home.scss */
 .application {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -282,7 +294,7 @@ footer {
   line-height: 63px;
 }
 
-/* line 27, ../sass/modules/_hero-home.scss */
+/* line 32, ../sass/modules/_hero-home.scss */
 .here {
   margin: 5%;
   padding-left: 5%;
@@ -293,14 +305,14 @@ footer {
   border: 4px solid #FFFFFF;
 }
 
-/* line 36, ../sass/modules/_hero-home.scss */
+/* line 41, ../sass/modules/_hero-home.scss */
 .second-section {
   top: 10%;
   color: white;
   background-color: #2091DC;
 }
 
-/* line 42, ../sass/modules/_hero-home.scss */
+/* line 47, ../sass/modules/_hero-home.scss */
 #explore_div {
   display: inline-flex;
   align-items: baseline;
@@ -312,17 +324,17 @@ footer {
   color: white;
   font-weight: bold;
   border: 2px solid #FFFFFF;
-  padding: 0 56px;
+  padding: 0 30px;
 }
 
-/* line 58, ../sass/modules/_hero-home.scss */
+/* line 63, ../sass/modules/_hero-home.scss */
 #explore {
-  padding: 0 10px;
+  margin: 10px 0;
   text-align: end;
   letter-spacing: 4.44px;
 }
 
-/* line 63, ../sass/modules/_hero-home.scss */
+/* line 68, ../sass/modules/_hero-home.scss */
 #first-button {
   display: inline-block;
   padding: 15px;
@@ -330,22 +342,22 @@ footer {
   background-color: #2091DC;
 }
 
-/* line 69, ../sass/modules/_hero-home.scss */
+/* line 74, ../sass/modules/_hero-home.scss */
 .arrounded {
   border-radius: 27.5px;
 }
 
-/* line 72, ../sass/modules/_hero-home.scss */
+/* line 77, ../sass/modules/_hero-home.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 75, ../sass/modules/_hero-home.scss */
+/* line 80, ../sass/modules/_hero-home.scss */
 .heading {
   background-color: rgba(96, 96, 96, 0.7);
 }
 
-/* line 78, ../sass/modules/_hero-home.scss */
+/* line 83, ../sass/modules/_hero-home.scss */
 .hero-home {
   height: 500px;
   background-image: url("../image/bg-header.png");
@@ -354,13 +366,13 @@ footer {
   background-size: cover;
   position: relative;
 }
-/* line 85, ../sass/modules/_hero-home.scss */
+/* line 90, ../sass/modules/_hero-home.scss */
 .hero-home .hero-overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(96, 96, 96, 0.7);
 }
-/* line 90, ../sass/modules/_hero-home.scss */
+/* line 95, ../sass/modules/_hero-home.scss */
 .hero-home .firstPart {
   position: absolute;
   top: 20%;
@@ -371,7 +383,7 @@ footer {
   font-size: 24px;
   letter-spacing: 3px;
 }
-/* line 100, ../sass/modules/_hero-home.scss */
+/* line 105, ../sass/modules/_hero-home.scss */
 .hero-home img {
   position: absolute;
   top: 50%;
@@ -383,7 +395,7 @@ footer {
   letter-spacing: 4px;
   font-weight: 800;
 }
-/* line 112, ../sass/modules/_hero-home.scss */
+/* line 117, ../sass/modules/_hero-home.scss */
 .hero-home .secondPart {
   position: absolute;
   top: 70%;
@@ -397,7 +409,7 @@ footer {
 }
 
 /*fin hero-home*/
-/* line 130, ../sass/modules/_hero-home.scss */
+/* line 135, ../sass/modules/_hero-home.scss */
 .social_network_head {
   position: absolute;
   bottom: 5%;
@@ -407,7 +419,7 @@ footer {
   display: inline-flex;
   margin-top: -2%;
 }
-/* line 138, ../sass/modules/_hero-home.scss */
+/* line 143, ../sass/modules/_hero-home.scss */
 .social_network_head .social_item {
   width: 50px;
   height: 50px;
@@ -417,7 +429,7 @@ footer {
   color: white;
   margin: 0 10px;
 }
-/* line 146, ../sass/modules/_hero-home.scss */
+/* line 151, ../sass/modules/_hero-home.scss */
 .social_network_head .social_item .elmt {
   position: absolute;
   left: 50%;
@@ -455,16 +467,17 @@ footer {
 }
 /* line 21, ../sass/modules/_section-home.scss */
 .first-section .normal-text {
+  font-family: "Poppins", sans-serif;
   text-align: left;
   font-size: 18px;
 }
 
-/* line 28, ../sass/modules/_section-home.scss */
+/* line 29, ../sass/modules/_section-home.scss */
 .second-elem .about-step {
   display: -webkit-flex;
   display: flex;
 }
-/* line 30, ../sass/modules/_section-home.scss */
+/* line 31, ../sass/modules/_section-home.scss */
 .second-elem .about-step .number-circle {
   margin-top: 5%;
   width: 60px;
@@ -473,8 +486,10 @@ footer {
   background-color: #1ABC9C;
   position: relative;
 }
-/* line 37, ../sass/modules/_section-home.scss */
+/* line 38, ../sass/modules/_section-home.scss */
 .second-elem .about-step .number-circle .number {
+  font-weight: bold;
+  font-size: 32px;
   color: white;
   position: absolute;
   left: 50%;
@@ -484,14 +499,22 @@ footer {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 46, ../sass/modules/_section-home.scss */
+/* line 49, ../sass/modules/_section-home.scss */
+.second-elem .about-step .title-desc {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #4E4D4D;
+}
+/* line 55, ../sass/modules/_section-home.scss */
 .second-elem .about-step .description-wrapper {
+  margin-top: 10px;
   text-align: left;
   margin-left: 5%;
 }
 
 /* line 1, ../sass/theme/_button.scss */
-.btn {
+.butn {
   display: inline-block;
   text-transform: uppercase;
   padding: 10px 20px;
@@ -500,27 +523,27 @@ footer {
 }
 
 /* line 11, ../sass/theme/_button.scss */
-.btn-white {
+.butn-white {
   background: white;
   color: white;
 }
 /* line 15, ../sass/theme/_button.scss */
-.btn-blue {
+.butn-blue {
   border: 2px solid #2091DC;
   background-color: #2091DC;
   color: white;
 }
 /* line 20, ../sass/theme/_button.scss */
-.btn-rounded {
+.butn-rounded {
   border-radius: 27px;
   box-shadow: 0px 1px rgba(75, 75, 75, 0.5);
 }
 /* line 25, ../sass/theme/_button.scss */
-.btn-border--blue {
+.butn-border--blue {
   border: 1px solid #202355;
 }
 /* line 28, ../sass/theme/_button.scss */
-.btn-border--green {
+.butn-border--green {
   border: 1px solid #202355;
 }
 

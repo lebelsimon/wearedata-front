@@ -19,6 +19,7 @@
         font-weight: bold;
     }
     .normal-text{
+        font-family: $second-font;
         text-align: left;
         font-size: 18px;
     }
@@ -35,6 +36,8 @@
             background-color: $green;
             position: relative;
             .number{
+                font-weight: bold;
+                font-size: 32px;
                 color: white;
                 position: absolute;
                 left:50%;
@@ -43,7 +46,14 @@
             }
 
         }
+        .title-desc{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: $second-font;
+            color: #4E4D4D;
+        }
         .description-wrapper{
+            margin-top: 10px;
             text-align: left;
             margin-left: 5%;
         }

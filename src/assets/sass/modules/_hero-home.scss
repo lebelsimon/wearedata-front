@@ -1,3 +1,6 @@
+.home{
+    text-align: center;
+}
 .flex{ 
     margin:30px;
     display:flex;
@@ -12,6 +15,8 @@
    
 }
 .inner-text{
+    font-weight: bold;
+    font-size: 18px;
     padding: 10px;
 }
 .lorem{
@@ -51,12 +56,12 @@
     color: white;
     font-weight: bold;
     border: 2px solid #FFFFFF;
-    padding: 0 56px;
+    padding: 0 30px;
 }
 
 
 #explore{
-    padding: 0 10px;
+    margin: 10px 0;
     text-align: end;
     letter-spacing: 4.44px;
 }
