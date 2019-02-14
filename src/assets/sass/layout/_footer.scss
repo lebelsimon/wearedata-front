@@ -1,0 +1,49 @@
+footer{
+    background-color: $color-second;
+    color: $color-main;
+    display: flex;
+    max-height: 126px;
+    justify-content: space-between;
+    padding-top : 3%;
+    padding-bottom: 3%;
+    align-items: baseline;
+
+}
+
+.logo-footer{
+    top:  20px;
+    left: 20px;
+    text-align: left;
+}
+.logo{
+    width: 174px;
+    height: 23px;
+    padding-left: 20%;
+   
+}
+.copyright{
+    text-transform: uppercase;
+    font-family: $primary-font;
+    margin: 0;
+}
+.social_network{
+    display: inline-flex;
+    justify-content: space-between;
+    .social_item{
+        width: 31px;
+        height: 31px;
+        border-radius: 60px;
+        border: 2px solid #FFFFFF;
+        position: relative;
+        color: white;
+        margin: 0 5px;
+        .elmt{
+            position: absolute;
+            left:50%;
+            top:50%;
+            @include translate(-50%,-50%);
+
+        }
+        
+    }
+}
