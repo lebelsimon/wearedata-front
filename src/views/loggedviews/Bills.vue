@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-<sidenav></sidenav>
+
 <div class="form-style-5">
     <form>
     <fieldset>
@@ -25,7 +25,6 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import Sidenav from '../../partials/Sidenav.vue'
 
 export default {
     name: "bills",
