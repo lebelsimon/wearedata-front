@@ -11,6 +11,9 @@
     -webkit-flex-flow: row wrap;
     justify-content: flex-end;
   }
+  .logo-header{
+    align-self: flex-start;
+  }
   
   .navigation a {
     text-decoration: none;
