@@ -1,6 +1,5 @@
 <template>
 <div class="container">
-
 <div class="form-style-5">
     <form>
     <fieldset>
@@ -31,8 +30,5 @@ export default {
     computed: {
     ...mapGetters({ currentUser: 'currentUser' })
     },
-    components: {
-        Sidenav
-    }
 };
 </script>

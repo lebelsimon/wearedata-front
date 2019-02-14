@@ -18,12 +18,14 @@
   import Header from "@/partials/Header.vue";
   import Footer from "@/partials/Footer.vue";
   import Navbar from '@/partials/Navbar.vue'
+  import Sidenav from '@/partials/Sidenav.vue'
   import { mapGetters } from 'vuex'
   export default {
     components: {
       Header,
       Footer,
-      Navbar
+      Navbar,
+      Sidenav
     },
     computed: {
     ...mapGetters({ currentUser: 'currentUser' })
