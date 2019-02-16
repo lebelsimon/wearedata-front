@@ -1,17 +1,17 @@
 <template>
   <div class="nav-bar">
-  <sidenav></sidenav>
-    <router-link to="/"><a><img class="logo" src="../assets/image/LOGO-BIG.svg" alt="logo"></a></router-link>
-  <ul class="navigation">
-    <router-link to="/dashboard"><a>Hello, {{ currentUser.firstName }} !</a></router-link>
-    <router-link to="/logout">
+    <sidenav></sidenav>
+    <router-link to="/"><a><img class="logo-h" src="../assets/image/LOGO-BIG.svg" alt="logo"></a></router-link>
+    <ul class="navigation">
+      <router-link to="/dashboard"><a>Hello, {{ currentUser.firstName }} !</a></router-link>
+      <router-link to="/logout">
       <li>
         <a>
           Logout
         </a>
       </li>
-    </router-link>
-  </ul>
+      </router-link>
+    </ul>
   </div>
 </template>
 

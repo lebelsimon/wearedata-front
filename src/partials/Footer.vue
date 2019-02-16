@@ -8,15 +8,15 @@
 
          <div class = "social_network">
              <div class="social_item">
-                 <i class="fab fa-facebook-f elmt"></i>
+                <i class="fab fa-facebook-f elmt"></i>
              </div>
              
              <div class="social_item">
-                 <i class="fab fa-twitter elmt"></i>
+                <i class="fab fa-twitter elmt"></i>
              </div>
-
+             
              <div class="social_item">
-                 <i class="fab fa-linkedin-in elmt"></i>
+                <i class="fab fa-linkedin-in elmt"></i>
              </div>
 
          </div>

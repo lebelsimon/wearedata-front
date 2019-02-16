@@ -1,6 +1,6 @@
 <template>
    <div class="nav-bar">
-            <router-link to="/"><a><img class="logo" src="../assets/image/LOGO-BIG.svg" alt="logo"></a></router-link>
+            <router-link to="/"><a><img class="logo-h" src="../assets/image/LOGO-BIG.svg" alt="logo"></a></router-link>
        
         <ul class="navigation">
             <router-link to="/login"><li><a>Connexion</a></li></router-link>

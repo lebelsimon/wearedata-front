@@ -5,7 +5,9 @@
   background: $color-second;
   align-items: center;
 }
-
+.sideNav-container{
+  width: 200px;
+}
 
 .navigation {
     list-style: none;
@@ -18,6 +20,11 @@
     display: flex;
     -webkit-flex-flow: row wrap;
     justify-content: flex-end;
+  }
+  .logo-h{
+    margin-left: 50%;
+    width: 174px;
+    height: 23px;
   }
   .logo-header{
     align-self: flex-start;

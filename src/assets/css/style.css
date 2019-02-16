@@ -24,7 +24,12 @@ p {
   align-items: center;
 }
 
-/* line 10, ../sass/layout/_header.scss */
+/* line 8, ../sass/layout/_header.scss */
+.sideNav-container {
+  width: 200px;
+}
+
+/* line 12, ../sass/layout/_header.scss */
 .navigation {
   list-style: none;
   margin: 0;
@@ -38,12 +43,19 @@ p {
   justify-content: flex-end;
 }
 
-/* line 22, ../sass/layout/_header.scss */
+/* line 24, ../sass/layout/_header.scss */
+.logo-h {
+  margin-left: 50%;
+  width: 174px;
+  height: 23px;
+}
+
+/* line 29, ../sass/layout/_header.scss */
 .logo-header {
   align-self: flex-start;
 }
 
-/* line 26, ../sass/layout/_header.scss */
+/* line 33, ../sass/layout/_header.scss */
 .navigation a {
   text-decoration: none;
   display: block;
@@ -51,26 +63,26 @@ p {
   color: white;
 }
 
-/* line 33, ../sass/layout/_header.scss */
+/* line 40, ../sass/layout/_header.scss */
 .navigation a:hover {
   background: #00b7f5;
 }
 
 @media all and (max-width: 800px) {
-  /* line 38, ../sass/layout/_header.scss */
+  /* line 45, ../sass/layout/_header.scss */
   .navigation {
     justify-content: space-around;
   }
 }
 @media all and (max-width: 600px) {
-  /* line 44, ../sass/layout/_header.scss */
+  /* line 51, ../sass/layout/_header.scss */
   .navigation {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     padding: 0;
   }
 
-  /* line 50, ../sass/layout/_header.scss */
+  /* line 57, ../sass/layout/_header.scss */
   .navigation a {
     text-align: center;
     padding: 10px;
@@ -78,7 +90,7 @@ p {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  /* line 58, ../sass/layout/_header.scss */
+  /* line 65, ../sass/layout/_header.scss */
   .navigation li:last-of-type a {
     border-bottom: none;
   }
@@ -142,7 +154,30 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+/* line 1, ../sass/layout/_sidebar.scss */
+.bm-menu {
+  background-color: #34495E;
+}
+
+/* line 4, ../sass/layout/_sidebar.scss */
+.bm-item-list {
+  color: white;
+}
+
 /* line 1, ../sass/layout/_dashboard.scss */
+.dashboard-cotainer {
+  display: flex;
+  align-items: center;
+}
+
+/* line 7, ../sass/layout/_dashboard.scss */
+.user-circle {
+  font-size: 100px;
+  position: absolute;
+  bottom: 20px;
+}
+
+/* line 15, ../sass/layout/_dashboard.scss */
 .form-style-5 {
   max-width: 500px;
   padding: 10px 20px;
@@ -154,24 +189,24 @@ footer {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* line 12, ../sass/layout/_dashboard.scss */
+/* line 26, ../sass/layout/_dashboard.scss */
 .form-style-5 fieldset {
   border: none;
 }
 
-/* line 15, ../sass/layout/_dashboard.scss */
+/* line 29, ../sass/layout/_dashboard.scss */
 .form-style-5 legend {
   font-size: 1.4em;
   margin-bottom: 10px;
 }
 
-/* line 19, ../sass/layout/_dashboard.scss */
+/* line 33, ../sass/layout/_dashboard.scss */
 .form-style-5 label {
   display: block;
   margin-bottom: 8px;
 }
 
-/* line 23, ../sass/layout/_dashboard.scss */
+/* line 37, ../sass/layout/_dashboard.scss */
 .form-style-5 input[type="text"],
 .form-style-5 input[type="date"],
 .form-style-5 input[type="datetime"],
@@ -201,7 +236,7 @@ footer {
   margin-bottom: 30px;
 }
 
-/* line 51, ../sass/layout/_dashboard.scss */
+/* line 65, ../sass/layout/_dashboard.scss */
 .form-style-5 input[type="text"]:focus,
 .form-style-5 input[type="date"]:focus,
 .form-style-5 input[type="datetime"]:focus,
@@ -215,13 +250,13 @@ footer {
   background: #d2d9dd;
 }
 
-/* line 63, ../sass/layout/_dashboard.scss */
+/* line 77, ../sass/layout/_dashboard.scss */
 .form-style-5 select {
   -webkit-appearance: menulist-button;
   height: 35px;
 }
 
-/* line 67, ../sass/layout/_dashboard.scss */
+/* line 81, ../sass/layout/_dashboard.scss */
 .form-style-5 .number {
   background: #1abc9c;
   color: #fff;
@@ -236,7 +271,7 @@ footer {
   border-radius: 15px 15px 15px 0px;
 }
 
-/* line 81, ../sass/layout/_dashboard.scss */
+/* line 95, ../sass/layout/_dashboard.scss */
 .form-style-5 input[type="submit"],
 .form-style-5 input[type="button"] {
   position: relative;
@@ -254,7 +289,7 @@ footer {
   margin-bottom: 10px;
 }
 
-/* line 98, ../sass/layout/_dashboard.scss */
+/* line 112, ../sass/layout/_dashboard.scss */
 .form-style-5 input[type="submit"]:hover,
 .form-style-5 input[type="button"]:hover {
   background: #109177;
