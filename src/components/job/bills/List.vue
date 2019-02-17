@@ -36,7 +36,7 @@ export default {
       fields: [
         { key: 'date', label: 'Date', sortable: true, sortDirection: 'desc'},
         // { key: 'idClient', label: 'Client', sortable: true, sortDirection: 'desc'},
-        { key: 'nomClient', label: 'Name', sortable: true, sortDirection: 'desc'},
+        { key: 'nomClient', label: 'Client', sortable: true, sortDirection: 'desc'},
         { key: 'nameProduct', label: 'Product', sortable: true, sortDirection: 'desc'},
         { key: 'quantity', label: 'Quantity', sortable: true, sortDirection: 'desc'},
         { key: 'salesCategory', label: 'Category', sortable: true, sortDirection: 'desc'},

@@ -14,13 +14,15 @@ import List from './List'
 import { mapGetters } from 'vuex'
 export default {
   name: 'Single',
+  props: ['bills'],
   data () {
     return {
       bill: [],
+      bills:[],
       fields: [
         { key: 'date', label: 'Date', sortable: true, sortDirection: 'desc'},
         // { key: 'idClient', label: 'Client', sortable: true, sortDirection: 'desc'},
-        { key: 'nomClient', label: 'Name', sortable: true, sortDirection: 'desc'},
+        { key: 'nomClient', label: 'Client', sortable: true, sortDirection: 'desc'},
         { key: 'nameProduct', label: 'Product', sortable: true, sortDirection: 'desc'},
         { key: 'quantity', label: 'Quantity', sortable: true, sortDirection: 'desc'},
         { key: 'salesCategory', label: 'Category', sortable: true, sortDirection: 'desc'},
@@ -39,6 +41,9 @@ export default {
   },
   created () {
     console.log($route.params._id);
+     this.$http.get('/bill')
+            .then(request => this.buildBillList(request.data))
+            .catch(() => { alert('Something went wrong!') })
     this.$http.get(`/bill/${this.$route.params._id}`)
         .then(request => { this.bill = request.data })
         .catch(() => { alert('Something went wrong!') })
