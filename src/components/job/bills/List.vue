@@ -5,7 +5,6 @@
         <input type="text" name="search" v-model="search" placeholder="Search..." class="form-control">
       </div>
       <h1>All bills</h1>
-      {{currentUser.id}}
     </div>
         <b-table bordered responsive hover dark :items="bills" >
             <template slot="_id" slot-scope="data">
