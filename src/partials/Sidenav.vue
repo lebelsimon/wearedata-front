@@ -2,9 +2,6 @@
     <div>
         <div ref="sideNav" class="bm-menu">
             <nav class="bm-item-list">
-              <!-- <a class="nav-link" href="#">
-                <i class="nav-icon cui-speedometer"></i> Nav item
-              </a> -->
                 <slot><router-link to="/bills"><a>Bills</a></router-link></slot>
                 <slot><router-link to="/dashboard"><a>Dashboard</a></router-link></slot>
             </nav>

@@ -4,12 +4,14 @@ import router from './router'
 import axios from './backend/vue-axios/axios'
 import store from './store'
 import BootstrapVue from 'bootstrap-vue'
+import { Table } from 'bootstrap-vue/es/components'
 
 // import translations from "./resources/translations";
 
 // Vue.use(VueI18n);
 // Vue.use(Vuelidate);
 Vue.use(BootstrapVue);
+Vue.use(Table)
 Vue.prototype.$http = axios
 
 // Vue.config.formApiUrl = process.env.FORM_API_URL;
