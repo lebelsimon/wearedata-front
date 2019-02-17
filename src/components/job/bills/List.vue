@@ -12,7 +12,7 @@
                     {{data.value}}
                 </a>
             </template>
-            <template slot="actions" slot-scope="data"> 
+            <template slot="actions"> 
               <button class="button is-small is-light">
                 <b-icon icon="edit" size="is-small"></b-icon>
               </button>
