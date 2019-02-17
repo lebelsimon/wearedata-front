@@ -18,7 +18,6 @@ export default {
   data () {
     return {
       bill: [],
-      bills:[],
       fields: [
         { key: 'date', label: 'Date', sortable: true, sortDirection: 'desc'},
         // { key: 'idClient', label: 'Client', sortable: true, sortDirection: 'desc'},
@@ -40,9 +39,9 @@ export default {
   ...mapGetters({ currentUser: 'currentUser' }),
   },
   created () {
-    console.log($route.params._id);
+    console.log(this.$route.params);
     this.$http.get(`/bill/${this.$route.params._id}`)
-        .then(request => { this.bill = request.data })
+        .then(request => { this.buildBillList(request.data) })
         .catch(() => { alert('Something went wrong!') })
   },
   methods: {
