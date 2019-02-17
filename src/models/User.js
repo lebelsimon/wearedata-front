@@ -30,7 +30,7 @@ export default class User {
     this.version = version
   }
 
-  get isAdmin () {
-    return this.admin
-  }
+  // get isAdmin () {
+  //   return this.admin
+  // }
 }
