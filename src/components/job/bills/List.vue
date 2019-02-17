@@ -12,13 +12,13 @@
                     {{data.value}}
                 </a>
             </template>
-            <template slot="actions"> 
-              <button class="button is-small is-light">
-                <b-icon icon="edit" size="is-small"></b-icon>
-              </button>
-              <button class="button is-small is-danger">
-                <b-icon icon="delete" size="is-small"></b-icon>
-              </button>
+            <template slot="actions" slot-scope="row">
+              <b-button size="sm" @click="info(row.item, row.index, $event.target)" class="mr-1">
+                edit
+              </b-button>
+              <b-button size="sm" @click.prevent="removeBill(row.item._id)">
+                delete
+              </b-button>
             </template>
         </b-table>
     <!-- <div class="row">
@@ -56,7 +56,12 @@ export default {
     ...mapGetters({ currentUser: 'currentUser' }),
     searchRegExp () {
       return new RegExp(`(.*)${this.search}(.*)`)
-    }
+    },
+    created () {
+    this.$http.get('/bill')
+        .then(request => this.buildBillList(request.data))
+        .catch(() => { alert('Something went wrong!') })
+    },
   },
   created () {
     this.$http.get('/bill')
@@ -64,12 +69,24 @@ export default {
         .catch(() => { alert('Something went wrong!') })
   },
   methods: {
+    removeBill(id){
+      console.log(id);
+      this.$http.delete('/bill/' + id)
+        .then(request => this.buildBillList(request.data))
+        .catch(() => { alert('Something went wrong!')})
+      console.log(id);
+    },
     buildBillList (data) {
       this.bills = data
     },
     searchMatch (billNameProduct) {
       return billNameProduct.toLowerCase().match(this.searchRegExp)
-    }
+    },
+     info(item, index, button) {
+        this.modalInfo.title = `Row index: ${index}`
+        this.modalInfo.content = JSON.stringify(item, null, 2)
+        this.$root.$emit('bv::show::modal', 'modalInfo', button)
+      },
   },
   computed: {
     searchRegExp () {
