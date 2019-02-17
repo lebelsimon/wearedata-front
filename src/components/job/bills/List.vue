@@ -6,14 +6,14 @@
       </div>
       <h1>All bills</h1>
     </div>
-        <b-table bordered responsive hover dark :items="bills" :fields="fields" >
-            <template slot="_id" slot-scope="data">
+        <b-table bordered responsive hover dark :items="bills" :fields="fields">
+            <!-- <template slot="_id" slot-scope="data">
                 <a :href="`/bills${data.value.replace(/[^a-z]+/i,'/').toLowerCase()}`">
                     {{data.value}}
                 </a>
-            </template>
+            </template> -->
             <template slot="actions" slot-scope="row">
-              <b-button size="sm" @click="info(row.item, row.index, $event.target)" class="mr-1">
+              <b-button size="sm" :href="`/bill/${row.item._id}`" class="mr-1">
                 edit
               </b-button>
               <b-button size="sm" @click.prevent="removeBill(row.item._id)">
@@ -21,9 +21,6 @@
               </b-button>
             </template>
         </b-table>
-    <!-- <div class="row">
-        <Box v-for="bill in bills" :key="bill.id" :bill="bill" v-show="searchMatch(bill.nameProduct)"></Box>
-    </div> -->
   </div>
 </template>
 
@@ -35,6 +32,7 @@ export default {
     return {
       search: '',
       bills: [],
+      billId: '',
       fields: [
         { key: 'date', label: 'Date', sortable: true, sortDirection: 'desc'},
         // { key: 'idClient', label: 'Client', sortable: true, sortDirection: 'desc'},
@@ -54,27 +52,22 @@ export default {
   },
   computed: {
     ...mapGetters({ currentUser: 'currentUser' }),
-    searchRegExp () {
-      return new RegExp(`(.*)${this.search}(.*)`)
-    },
-    created () {
-    this.$http.get('/bill')
-        .then(request => this.buildBillList(request.data))
-        .catch(() => { alert('Something went wrong!') })
-    },
+    // searchRegExp () {
+    //   return new RegExp(`(.*)${this.search}(.*)`)
+    // },
   },
-  created () {
-    this.$http.get('/bill')
-        .then(request => this.buildBillList(request.data))
-        .catch(() => { alert('Something went wrong!') })
-  },
+      created () {
+        this.$http.get('/bill')
+            .then(request => this.buildBillList(request.data))
+            .catch(() => { alert('Something went wrong!') })
+      },
   methods: {
     removeBill(id){
       console.log(id);
-      this.$http.delete('/bill/' + id)
-        .then(request => this.buildBillList(request.data))
-        .catch(() => { alert('Something went wrong!')})
-      console.log(id);
+      // this.$http.delete('/bill/' + id);
+      // this.$http.get('/bill')
+      //   .then(request => this.buildBillList(request.data))
+      //   .catch(() => { alert('Something went wrong!') })
     },
     buildBillList (data) {
       this.bills = data
@@ -89,9 +82,9 @@ export default {
       },
   },
   computed: {
-    searchRegExp () {
-      return new RegExp(`(.*)${this.search}(.*)`)
-    }
+    // searchRegExp () {
+    //   return new RegExp(`(.*)${this.search}(.*)`)
+    // }
   },
   components: {
   }
