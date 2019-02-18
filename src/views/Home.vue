@@ -124,6 +124,52 @@
                 </div>
             </div>
         </section>
+        <section class="newsletter-section">
+            <form @submit.prevent="signUp">
+                <div class="white container">
+                        <div class="inner-newsletter container">
+                        <h1 class="uppercase">OFFRE DE LANCEMENT</h1>
+                        <p>Inscrivez-vous et recevez prochainement <br> 
+                        un accès premium à l’application WeAreData</p>
+
+                        <div class="inputs">
+                            <div class="left-side uppercase">
+
+                                <label for="name">Nom</label>
+                                <input id="name" type="text" class="inputype">
+
+                                <label for="name">Société</label>
+                                <input id="name" type="text" class="inputype">
+                                    
+                                <label for="name">Mail</label>
+                                <input id="name" type="text" class="inputype">
+                                    
+                            </div>
+                            <div class="right-side uppercase">
+                                <label for="surname">Prénom</label>
+                                <input id="surname" type="text" class="inputype">
+
+                                <label for="name">Siret</label>
+                                <input id="name" type="text" class="inputype">
+
+                                <label for="name">Téléphone</label>
+                                <input id="name" type="text" class="inputype">    
+                            </div>
+                        </div>
+                        <div class="checkbox-div">
+                            <input type="checkbox" id="check-N" name="check-N">
+                            <label for="check-N">Je souhaite être informé des prochaines actualités de <b>WeAreData</b></label>
+                        </div>
+                        <button type="submit" class="subscribe">
+                            <p class="sub_txt">JE M’INSCRIS</p>     
+                        </button>
+
+                    </div>
+                        
+                </div>
+        
+            </form>
+        </section>
     </div>
 </template>
 
