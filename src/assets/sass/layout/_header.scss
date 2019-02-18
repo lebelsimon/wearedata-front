@@ -5,6 +5,9 @@
   background: $color-second;
   align-items: center;
 }
+.signup-ancre{
+  margin: auto 0;
+}
 .sideNav-container{
   width: 200px;
 }
@@ -22,7 +25,9 @@
     justify-content: flex-end;
   }
   .logo-h{
-    margin-left: 50%;
+    margin: 0 5%;
+  }
+  .logo-img{
     width: 174px;
     height: 23px;
   }

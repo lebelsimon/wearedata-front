@@ -25,11 +25,16 @@ p {
 }
 
 /* line 8, ../sass/layout/_header.scss */
+.signup-ancre {
+  margin: auto 0;
+}
+
+/* line 11, ../sass/layout/_header.scss */
 .sideNav-container {
   width: 200px;
 }
 
-/* line 12, ../sass/layout/_header.scss */
+/* line 15, ../sass/layout/_header.scss */
 .navigation {
   list-style: none;
   margin: 0;
@@ -43,19 +48,23 @@ p {
   justify-content: flex-end;
 }
 
-/* line 24, ../sass/layout/_header.scss */
+/* line 27, ../sass/layout/_header.scss */
 .logo-h {
-  margin-left: 50%;
+  margin: 0 5%;
+}
+
+/* line 30, ../sass/layout/_header.scss */
+.logo-img {
   width: 174px;
   height: 23px;
 }
 
-/* line 29, ../sass/layout/_header.scss */
+/* line 34, ../sass/layout/_header.scss */
 .logo-header {
   align-self: flex-start;
 }
 
-/* line 33, ../sass/layout/_header.scss */
+/* line 38, ../sass/layout/_header.scss */
 .navigation a {
   text-decoration: none;
   display: block;
@@ -63,26 +72,26 @@ p {
   color: white;
 }
 
-/* line 40, ../sass/layout/_header.scss */
+/* line 45, ../sass/layout/_header.scss */
 .navigation a:hover {
   background: #00b7f5;
 }
 
 @media all and (max-width: 800px) {
-  /* line 45, ../sass/layout/_header.scss */
+  /* line 50, ../sass/layout/_header.scss */
   .navigation {
     justify-content: space-around;
   }
 }
 @media all and (max-width: 600px) {
-  /* line 51, ../sass/layout/_header.scss */
+  /* line 56, ../sass/layout/_header.scss */
   .navigation {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     padding: 0;
   }
 
-  /* line 57, ../sass/layout/_header.scss */
+  /* line 62, ../sass/layout/_header.scss */
   .navigation a {
     text-align: center;
     padding: 10px;
@@ -90,7 +99,7 @@ p {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  /* line 65, ../sass/layout/_header.scss */
+  /* line 70, ../sass/layout/_header.scss */
   .navigation li:last-of-type a {
     border-bottom: none;
   }
@@ -645,6 +654,12 @@ footer {
 /* line 139, ../sass/modules/_section-home.scss */
 .newsletter-section .subscribe p {
   margin-top: 7%;
+}
+
+/* line 1, ../sass/modules/_bills-table.scss */
+.bills-table {
+  margin: auto;
+  width: 100%;
 }
 
 /* line 1, ../sass/theme/_button.scss */

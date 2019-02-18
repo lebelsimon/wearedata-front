@@ -124,7 +124,7 @@
                 </div>
             </div>
         </section>
-        <section class="newsletter-section">
+        <section id="signup-form" class="newsletter-section">
             <form @submit.prevent="signUp">
                 <div class="white container">
                         <div class="inner-newsletter container">
