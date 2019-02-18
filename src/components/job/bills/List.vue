@@ -23,7 +23,7 @@
             </template>
         </b-table>
     </div>
-      
+
   </div>
 </template>
 
@@ -67,10 +67,11 @@ export default {
   methods: {
     removeBill(id){
       console.log(id);
-      // this.$http.delete('/bill/' + id);
-      // this.$http.get('/bill')
-      //   .then(request => this.buildBillList(request.data))
-      //   .catch(() => { alert('Something went wrong!') })
+      this.$http.delete('/bill/' + id);
+      this.$http.get('/bill')
+      .then(request => this.buildBillList(request.data))
+      .catch(() => { alert('Something went wrong!') })
+      this.$router.go('/bills')
     },
     buildBillList (data) {
       this.bills = data
