@@ -1,12 +1,13 @@
 <template>
   <div>
-    <div class="page-header">
+    <div class="page-header container">
       <div class="float-right">
         <input type="text" name="search" v-model="search" placeholder="Search..." class="form-control">
       </div>
-      <h1>All bills</h1>
+      <h1>Toutes les factures</h1>
     </div>
-        <b-table bordered responsive hover dark :items="bills" :fields="fields">
+    <div class="bills-table">
+        <b-table bordered hover dark :items="bills" :fields="fields">
             <!-- <template slot="_id" slot-scope="data">
                 <a :href="`/bills${data.value.replace(/[^a-z]+/i,'/').toLowerCase()}`">
                     {{data.value}}
@@ -21,6 +22,8 @@
               </b-button>
             </template>
         </b-table>
+    </div>
+      
   </div>
 </template>
 

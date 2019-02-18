@@ -656,6 +656,12 @@ footer {
   margin-top: 7%;
 }
 
+/* line 1, ../sass/modules/_bills-table.scss */
+.bills-table {
+  margin: auto;
+  width: 100%;
+}
+
 /* line 1, ../sass/theme/_button.scss */
 .butn {
   display: inline-block;
