@@ -19,6 +19,7 @@
         font-weight: bold;
     }
     .normal-text{
+        font-family: $second-font;
         text-align: left;
         font-size: 18px;
     }
@@ -35,6 +36,8 @@
             background-color: $green;
             position: relative;
             .number{
+                font-weight: bold;
+                font-size: 32px;
                 color: white;
                 position: absolute;
                 left:50%;
@@ -43,10 +46,100 @@
             }
 
         }
+        .title-desc{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: $second-font;
+            color: #4E4D4D;
+        }
         .description-wrapper{
+            margin-top: 10px;
             text-align: left;
             margin-left: 5%;
         }
     }
+
     
+}
+
+.newsletter-section{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-image: url("../image/BG.png");
+    .white{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        .checkbox-div{
+            text-align: left;
+            margin-left: 70px;
+            margin-top: 40px;
+        }
+        box-shadow: 5px 13px 26px 6px rgba(172,166,166,0.5);
+        background-color: white;
+        
+        label{
+            margin: 10px;
+        }
+    }
+    .inner-newsletter{
+        h1{
+            margin-top: 10%;
+            margin-bottom: 2%;
+            font-weight: bold;
+            color: #1ABC9C;
+            font-size: 25px;
+            letter-spacing: 2px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 600;	
+            line-height: 22px;
+        }
+        display: flex;
+        flex-direction: column;
+        
+        .inputs{
+            label{
+                letter-spacing: 0.95px;
+                line-height: 22px;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: left;
+                padding-top: 33px;
+                padding-left: 2px;
+            }
+            display: flex;
+            justify-content: space-evenly;
+            
+            .inputype{
+                height: 55px;	
+                width: 349px;
+                border: 1px solid #34495E;	
+                border-radius: 4px;
+            }
+            .left-side{
+                flex-direction: column;
+                display: flex;
+            }
+            .right-side{
+                flex-direction: column;
+                display: flex;
+            }
+        }
+        
+    }
+    .subscribe{
+        margin: auto;
+        height: 50px;
+        width: 181px;
+        border: 2px solid #2ECC71;
+        border-radius: 3px;
+        background-color: #2ECC71;
+        color: white;
+        p{
+            margin-top: 7%;
+
+
+        }
+    }
 }

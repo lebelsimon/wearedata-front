@@ -8,7 +8,7 @@
                    <img src="../assets/image/LOGO-BIG.svg" alt="logo">
                     <div class ="secondPart">
                         <p class="uppercase">démocratisez l'accès à vos données d'entreprise </p>
-                        <div class="btn btn-blue btn-rounded">soyez les premiers !</div>
+                        <div class="butn butn-blue butn-rounded">soyez les premiers !</div>
                     </div>
 
                     <div class = "social_network_head">
@@ -24,8 +24,9 @@
                                 <i class="fab fa-linkedin-in elmt"></i>
                             </div>
                     </div>
-                    <div id="explore" class="uppercase arrounded">
-                            explore <i class="fas fa-angle-down"></i>
+                    <div id="explore_div" class="uppercase arrounded">
+                            <p id="explore">explore</p>   
+                            <i class="fas fa-angle-down"></i>
                     </div>
                     <div class="tirdPart">
             
@@ -91,7 +92,7 @@
                             </div>
                         </div>
                         <div class="description-wrapper">
-                            <h1>Pluguer vos données</h1>
+                            <h1 class="title-desc">Pluguer vos données</h1>
                             <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
@@ -103,7 +104,7 @@
                             </div>
                         </div>
                         <div class="description-wrapper">
-                            <h1>Laisser tourner notre application</h1>
+                            <h1 class="title-desc">Laisser tourner notre application</h1>
                             <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
@@ -115,7 +116,7 @@
                             </div>
                         </div>
                         <div class="description-wrapper">
-                            <h1>Customiser vos reporting</h1>
+                            <h1 class="title-desc">Customiser vos reporting</h1>
                             <p class="normal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
@@ -123,15 +124,64 @@
                 </div>
             </div>
         </section>
+        <section id="signup-form" class="newsletter-section">
+            <form @submit.prevent="signUp">
+                <div class="white container">
+                        <div class="inner-newsletter container">
+                        <h1 class="uppercase">OFFRE DE LANCEMENT</h1>
+                        <p>Inscrivez-vous et recevez prochainement <br> 
+                        un accès premium à l’application WeAreData</p>
+
+                        <div class="inputs">
+                            <div class="left-side uppercase">
+
+                                <label for="name">Nom</label>
+                                <input id="name" type="text" class="inputype">
+
+                                <label for="name">Société</label>
+                                <input id="name" type="text" class="inputype">
+                                    
+                                <label for="name">Mail</label>
+                                <input id="name" type="text" class="inputype">
+                                    
+                            </div>
+                            <div class="right-side uppercase">
+                                <label for="surname">Prénom</label>
+                                <input id="surname" type="text" class="inputype">
+
+                                <label for="name">Siret</label>
+                                <input id="name" type="text" class="inputype">
+
+                                <label for="name">Téléphone</label>
+                                <input id="name" type="text" class="inputype">    
+                            </div>
+                        </div>
+                        <div class="checkbox-div">
+                            <input type="checkbox" id="check-N" name="check-N">
+                            <label for="check-N">Je souhaite être informé des prochaines actualités de <b>WeAreData</b></label>
+                        </div>
+                        <button type="submit" class="subscribe">
+                            <p class="sub_txt">JE M’INSCRIS</p>     
+                        </button>
+
+                    </div>
+                        
+                </div>
+        
+            </form>
+        </section>
     </div>
 </template>
 
 
 <script>
     // @ is an alias to /src
-
+    import { mapGetters } from 'vuex'
     export default {
         name: "home",
-        components: {}
+        computed: {
+            ...mapGetters({ currentUser: 'currentUser' })
+        },
+        components: {},
     };
 </script>
