@@ -4,6 +4,7 @@
             <nav class="bm-item-list">
                 <slot><router-link to="/dashboard"><a>Dashboard</a></router-link></slot>
                 <slot><router-link to="/bills"><a>Bills</a></router-link></slot>
+                <slot><router-link to="/dashboard"><a>Dashboard</a></router-link></slot>
             </nav>
             <span class="bm-cross-button cross-style" @click="closeMenu" :class="{ hidden: !crossIcon }">
                 <span v-for="(x, index) in 2" :key="x" class="bm-cross" :style="{ position: 'absolute', width: '3px', height: '14px',transform: index === 1 ? 'rotate(45deg)' : 'rotate(-45deg)'}">
