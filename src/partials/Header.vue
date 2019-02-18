@@ -1,10 +1,12 @@
 <template>
    <div class="nav-bar">
-            <router-link to="/"><a><img class="logo-h" src="../assets/image/LOGO-BIG.svg" alt="logo"></a></router-link>
-       
+            <div class="logo-h">
+              <router-link to="/"><a><img class="logo-img" src="../assets/image/LOGO-BIG.svg" alt="logo"></a></router-link>
+            </div>
+            
         <ul class="navigation">
             <router-link to="/login"><li><a>Connexion</a></li></router-link>
-            <router-link to="/signup"><li><a>Inscription</a></li></router-link>
+            <div class="signup-ancre"><li><a href="#signup-form">Inscription</a></li></div>
         </ul>
    </div>
 

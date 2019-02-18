@@ -1,7 +1,9 @@
 <template>
   <div class="nav-bar">
     <sidenav></sidenav>
-    <router-link to="/"><a><img class="logo-h" src="../assets/image/LOGO-BIG.svg" alt="logo"></a></router-link>
+    <div class="logo-h">
+        <router-link to="/"><a><img class="logo-img" src="../assets/image/LOGO-BIG.svg" alt="logo"></a></router-link>
+    </div>
     <ul class="navigation">
       <router-link to="/dashboard"><a>Hello, {{ currentUser.firstName }} !</a></router-link>
       <router-link to="/logout">
