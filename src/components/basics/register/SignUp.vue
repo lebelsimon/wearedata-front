@@ -64,13 +64,8 @@ export default {
     },
 
     signUpSuccessful (req) {
-    if (!req.data.token) {
-        this.signUpFail()
-        return
-    }
-    localStorage.token = req.data.token
-    this.$store.dispatch('signup')
-    this.$router.replace(this.$route.query.redirect || '/dashboard')
+      console.log(req)
+    this.$router.replace(this.$route.query.redirect || '/login')
     },
 
     signUpFail () {
